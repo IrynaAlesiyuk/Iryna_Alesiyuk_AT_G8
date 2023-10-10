@@ -10,7 +10,8 @@ public class Souce {
     }
 
     public void printSouceDetails() {
-        System.out.println(String.format("Это соус %s %s цвета", this.name, this.color));
+        System.out.printf("Это соус %s %s цвета", this.name, this.color);
+        System.out.println();
     }
 
     public String getName() {

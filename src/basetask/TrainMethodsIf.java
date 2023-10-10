@@ -3,35 +3,20 @@ package basetask;
 public class TrainMethodsIf {
 
     public int returnNewInt(int num) {
-        if (num < 8) {
-            return num * 7;
-        } else {
-            return num / 4;
-        }
+        return num < 8 ? num * 7 : num / 4;
     }
 
     public long returnNewLong(long num) {
-        if (num > 300) {
-            return num - 300;
-        } else {
-            return num + 20;
-        }
+        return num > 300 ? num - 300 : num + 20;
     }
 
     public String returnNewChar(char symbol) {
-        if (symbol == 'g') {
-            return "go";
-        } else {
-            return "o" + symbol;
-        }
+        return symbol == 'g' ? "go" : "o" + symbol;
+
     }
 
     public float returnNewFloat(float num) {
-        if (num == 0.67) {
-            return num;
-        } else {
-            return num * 2;
-        }
+        return num == 0.67 ? num : num * 2;
     }
 
     public double returnNewDouble(double num) {

@@ -9,8 +9,9 @@ public class Mouse {
         this.age = age;
     }
 
-    public void printMouseDetails(){
-        System.out.println(String.format("Я мышь, меня зовут %s и мне %s лет", this.name, this.age));
+    public void printMouseDetails() {
+        System.out.printf("Я мышь, меня зовут %s и мне %s лет", this.name, this.age);
+        System.out.println();
     }
 
     public String getName() {
@@ -28,6 +29,5 @@ public class Mouse {
     public void setAge(int age) {
         this.age = age;
     }
-
 
 }

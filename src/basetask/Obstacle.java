@@ -4,13 +4,14 @@ public class Obstacle {
     private String description;
     private String severity;
 
-    public Obstacle(String severity,String description) {
+    public Obstacle(String severity, String description) {
         this.description = description;
         this.severity = severity;
     }
 
     public void printObstacleDetails() {
-        System.out.println(String.format("Возникло %s препятствиие %s", this.severity, this.description));
+        System.out.printf("Возникло %s препятствиие %s", this.severity, this.description);
+        System.out.println();
     }
 
     public String getDescription() {

@@ -4,13 +4,14 @@ public class Bee {
     private String gender;
     private int weight;
 
-    public void printBeeDetails(){
-        System.out.println(String.format("Я легче лося в %d раз", 500/this.weight));
-    }
-
     public Bee(String gender, int weight) {
         this.gender = gender;
         this.weight = weight;
+    }
+
+    public void printBeeDetails() {
+        System.out.printf("Я легче лося в %d раз", 500 / this.weight);
+        System.out.println();
     }
 
     public String getGender() {
