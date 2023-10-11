@@ -1,4 +1,6 @@
 package homework.day4.playground.essence.creatures;
 
-public abstract class Crocodile {
+public class Crocodile extends Vertebrata {
+
+
 }

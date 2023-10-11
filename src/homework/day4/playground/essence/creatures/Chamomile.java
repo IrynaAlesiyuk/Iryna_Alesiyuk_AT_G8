@@ -1,4 +1,4 @@
 package homework.day4.playground.essence.creatures;
 
-public abstract class Chamomile {
+public class Chamomile extends Flower {
 }

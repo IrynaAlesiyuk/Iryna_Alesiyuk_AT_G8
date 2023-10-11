@@ -1,4 +1,6 @@
 package homework.day4.playground.essence.creatures;
 
-public abstract class Pigeon {
+public class Pigeon extends Vertebrata{
+
+
 }
