@@ -1,4 +1,4 @@
-package cycletask;
+package homework.day3.cycletask;
 
 
 import java.util.Random;
@@ -53,17 +53,4 @@ public class ArrayTasks {
         }
     }
 
-//    public void sortDesk(int[] array){
-//       // int min = array[0];
-//        for (int i = 0; i < array.length; i++) {
-//            if(array[i] < array[i+1]){
-//                continue;
-//            } else {
-//                array[i] = array[i+1];
-//            }
-//            System.out.println(array[i]);
-//        }
-//    }
 }
-
-;

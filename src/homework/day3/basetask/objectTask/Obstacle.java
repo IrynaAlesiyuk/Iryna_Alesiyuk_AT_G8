@@ -1,4 +1,4 @@
-package basetask;
+package homework.day3.basetask.objectTask;
 
 public class Obstacle {
     private String description;

@@ -1,4 +1,7 @@
-package bubbles;
+package project.boxing;
+
+import project.water.SparklingWater;
+import project.water.Water;
 
 public class Bottle {
 

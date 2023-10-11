@@ -1,4 +1,6 @@
-package basetask;
+package homework.day3.basetask.objectTask;
+
+import homework.day3.basetask.objectTask.*;
 
 public class TrainMethodsObjectsRunner {
     public static void main(String[] args) {

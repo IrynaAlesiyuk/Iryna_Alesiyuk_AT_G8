@@ -1,4 +1,7 @@
-package basetask;
+package homework.day3.basetask.ifTask;
+
+import homework.day3.basetask.ifTask.TrainMethodsIf;
+
 public class TrainMethodsIfRunner {
 
     public static void main(String[] args) {
