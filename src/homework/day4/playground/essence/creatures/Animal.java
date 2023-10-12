@@ -6,13 +6,10 @@ public abstract class Animal extends Matter {
 
     protected String name;
 
-    public Animal(String name) {
+    public Animal(int mass, String name) {
+        super(mass);
         this.name = name;
     }
-
-    public Animal() {
-    }
-
 
     public String getName() {
         return name;

@@ -3,22 +3,8 @@ package homework.day4.playground.essence.creatures;
 public abstract class Vertebrata extends Animal {
 
 
-    protected String name;
-
-    public Vertebrata(String name) {
-        this.name = name;
-    }
-
-    public Vertebrata() {
-
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+    public Vertebrata(int mass, String name) {
+        super(mass, name);
     }
 
     public void eat(Insect food) {

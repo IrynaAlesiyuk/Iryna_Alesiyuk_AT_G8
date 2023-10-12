@@ -8,10 +8,6 @@ public abstract class Matter {
         this.mass = mass;
     }
 
-    public Matter() {
-
-    }
-
     public int getMass() {
         return mass;
     }

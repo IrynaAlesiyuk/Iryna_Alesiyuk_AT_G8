@@ -11,9 +11,6 @@ public abstract class Plant extends Matter {
         this.name = name;
     }
 
-    public Plant() {
-    }
-
     public String getName() {
         return name;
     }

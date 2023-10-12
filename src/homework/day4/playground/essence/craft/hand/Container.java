@@ -11,9 +11,6 @@ public abstract class Container extends Matter {
         this.name = name;
     }
 
-    public Container() {
-    }
-
     public String getName() {
         return name;
     }
