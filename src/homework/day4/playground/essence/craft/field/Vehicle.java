@@ -11,6 +11,9 @@ public abstract class Vehicle extends Matter {
         this.name = name;
     }
 
+    public Vehicle() {
+    }
+
     public String getName() {
         return name;
     }

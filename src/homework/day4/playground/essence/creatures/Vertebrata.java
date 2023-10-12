@@ -9,6 +9,10 @@ public abstract class Vertebrata extends Animal {
         this.name = name;
     }
 
+    public Vertebrata() {
+
+    }
+
     public String getName() {
         return name;
     }
@@ -17,7 +21,7 @@ public abstract class Vertebrata extends Animal {
         this.name = name;
     }
 
-    public void eat(Insect food){
+    public void eat(Insect food) {
         System.out.println(String.format("I am %s and I am eating %s", this.name, food.getName()));
 
     }

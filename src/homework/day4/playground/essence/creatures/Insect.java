@@ -8,6 +8,9 @@ public abstract class Insect extends Animal {
         this.name = name;
     }
 
+    public Insect() {
+    }
+
     public String getName() {
         return name;
     }

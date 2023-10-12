@@ -11,6 +11,9 @@ public abstract class Aircraft extends Matter {
         this.name = name;
     }
 
+    public Aircraft() {
+    }
+
     public String getName() {
         return name;
     }
