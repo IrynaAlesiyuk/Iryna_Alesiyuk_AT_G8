@@ -8,6 +8,7 @@ import homework.day4.playground.essence.craft.air.Rocket;
 import homework.day4.playground.essence.creatures.Fly;
 import homework.day4.playground.essence.creatures.Insect;
 import homework.day4.playground.essence.creatures.Mosquito;
+import homework.day4.playground.processors.FlyableProcessor;
 
 public class FlyableProcessorRunner {
     public static void main(String[] args) {
@@ -31,5 +32,28 @@ public class FlyableProcessorRunner {
 
         Fly aFly = new Fly(23, "Domestica Fly");
         Mosquito aMosquito = new Mosquito(12, "Vulgaris Mosquito");
+
+        FlyableProcessor flyableProcessor = new FlyableProcessor();
+
+        flyableProcessor.runFlyable(flyableCopter);
+        flyableProcessor.runFlyable(flyablePlane);
+        flyableProcessor.runFlyable(flyableRocket);
+        flyableProcessor.runFlyable(flyableFly);
+        flyableProcessor.runFlyable(flyableMosquito);
+        flyableProcessor.runFlyable(aircraftCopter);
+        flyableProcessor.runFlyable(aircraftPlane);
+        flyableProcessor.runFlyable(aircraftRocket);
+        // flyableProcessor.runFlyable(insectFly); expect Insect
+        // flyableProcessor.runFlyable(insectMosquito); expect Insect
+        flyableProcessor.runFlyable(aCopter);
+        flyableProcessor.runFlyable(aPlane);
+        flyableProcessor.runFlyable(aRocket);
+        flyableProcessor.runFlyable(aFly);
+        flyableProcessor.runFlyable(aMosquito);
+
+
+        flyableProcessor.runFlyable(aCopter, "никуда");
+        flyableProcessor.runFlyable(aircraftPlane, "повсюду");
+
     }
 }
