@@ -12,4 +12,10 @@ public class Motorbike extends Vehicle {
                 Motorbike.class.getName(), this.getName(), pointA, pointB));
         return pointB - pointA;
     }
+
+    @Override
+    public void drive(String direction) {
+        System.out.println(String.format("I am %s, my name is %s and I amd driving to %s",
+                Motorbike.class.getSimpleName(), this.name, direction));
+    }
 }

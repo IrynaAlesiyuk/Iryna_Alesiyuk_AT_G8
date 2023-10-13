@@ -14,7 +14,6 @@ public abstract class Vehicle extends Matter implements Transportable, Rideable 
     }
 
 
-
     public String getName() {
         return name;
     }
@@ -22,4 +21,5 @@ public abstract class Vehicle extends Matter implements Transportable, Rideable 
     public void setName(String name) {
         this.name = name;
     }
+
 }
