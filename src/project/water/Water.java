@@ -1,15 +1,11 @@
 package project.water;
 
 public abstract class Water {
-    private String color;
-    private String transparency;
-    private String smell;
-    private int temperature;
+    private String color = "no";
+    private String transparency = "transparent";
+    private String smell = "no";
+    private int temperature = 0;
 
-
-    //вода заполняется пузырьками при упаковке на заводе
-    //1 литр воды содержит 10 тыс пузырьков
-    public abstract void pump(Bubble[] bubbles);
     public String getColor() {
         return color;
     }
