@@ -1,6 +1,6 @@
 package homework.day5;
 
-public class FindDuplicate {
+public class FindDuplicateStatic {
 
     public static void findAllDuplicate(String stringInput) {
         String[] arr = stringInput.split(" ");
