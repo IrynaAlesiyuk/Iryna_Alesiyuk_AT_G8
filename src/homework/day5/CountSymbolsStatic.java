@@ -5,18 +5,18 @@ import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.util.Locale;
 
-public class CountSymbols {
+public class CountSymbolsStatic {
 
     //1.7 написать метод, который принимает на вход строку текста и выводит в консоль дату,
     // которая на n дней больше,чем текущая в формате "Сгенерированная гласная дата: 7 мая",
     // где n - это количество гласных буков в получаемой строке
 
-    public void returnDateBasedOnVowelsCount(String anyString) {
+    public static void returnDateBasedOnVowelsCount(String anyString) {
         int numberOfVowel = countVowels(anyString);
         increaseDate(numberOfVowel);
     }
 
-    private void increaseDate(int countOfDate) {
+    private static void increaseDate(int countOfDate) {
         LocalDateTime now = LocalDateTime.now();
         LocalDateTime nowPlus = now.plus(countOfDate, ChronoUnit.DAYS);
 
@@ -26,7 +26,7 @@ public class CountSymbols {
         System.out.println(String.format("Сгенерированная гласная дата: %s",date));
     }
 
-    private int countVowels(String anyString) {
+    private static int countVowels(String anyString) {
         String allSymbols = "[аеёиоуыэюяaeiou]";
 
         char[] allVowels = allSymbols.toCharArray();

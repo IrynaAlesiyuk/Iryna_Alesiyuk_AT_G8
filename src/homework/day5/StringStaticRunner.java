@@ -16,6 +16,6 @@ public class StringStaticRunner {
         String inputDate = "22.00 07.09.2020";
         ChangeDateFormatStatic.returnDateInDifferentFormat(inputDate);
         System.out.println("----------");
-        CountSymbols.returnDateBasedOnVowelsCount("asdAER а");
+        CountSymbolsStatic.returnDateBasedOnVowelsCount("asdAER а");
     }
 }
