@@ -11,7 +11,10 @@ public class TaskTwo {
 
         //Проитерировать список через for-each и отпечатать слова в файл figures через тире
         for (String figure : figures) {
-            System.out.print(figure + " - ");
+            System.out.print(figure);
+            if (figures.indexOf(figure) < figures.size() - 1) {
+                System.out.print(" - ");
+            }
         }
         System.out.println();
 
