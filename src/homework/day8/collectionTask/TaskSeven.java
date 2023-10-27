@@ -20,12 +20,20 @@ public class TaskSeven {
         //Посчитать сколько названий элементов состоит более, чем из одного слова и вывести число в консоль
         int counter = 0;
         for (String element : elements) {
-            String[] words = element.split(" |\\-");
+            String trimElement = element.trim();
+            if (trimElement.startsWith("-")) {
+                trimElement = trimElement.substring(1);
+            }
+            if (trimElement.endsWith("-")) {
+                trimElement = trimElement.substring(0, trimElement.length() - 2);
+            }
+
+            String[] words = trimElement.split(" |\\-");
             if (Arrays.asList(words).size() > 1) {
                 counter++;
             }
         }
-        System.out.println("Element contains more than 1 word:" + counter);
+        System.out.println("Element contains more than 1 word: " + counter);
 
         //Проитерировать список по индексу и отпечатать слова в консоль через пробел
         for (int i = 0; i < elements.size(); i++) {
