@@ -18,10 +18,18 @@ public class TaskThree {
         }
 
         //Посчитать сумму всех буков во всех словах и вывести число в консоль
-        for (int i = 0; i < cities.size(); i++) {
-            int count = (cities.get(i).toCharArray()).length;
-            System.out.println("Number of letters for " + cities.get(i) + " is: " + count);
+        int counter = 0;
+        for (String city : cities) {
+            counter += city.length();
         }
+        System.out.println("Number of letters for all cities is: " + counter);
+
+
+        int letters = 0;
+        for (String city : cities) {
+            letters += city.length();
+        }
+        System.out.println(letters);
 
         //Проитерировать список по индексу и отпечатать слова в консоль через пробел
         for (int i = 0; i < cities.size(); i++) {

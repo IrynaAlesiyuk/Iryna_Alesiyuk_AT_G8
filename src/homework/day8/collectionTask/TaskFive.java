@@ -27,7 +27,7 @@ public class TaskFive {
         //Посчитать сколько стран, в названии которых меньше 7 букв и вывести число в консоль
         int counter = 0;
         for (int i = 0; i < countries.size(); i++) {
-            int count = (countries.get(i).toCharArray()).length;
+            int count = countries.get(i).length();
             if (count < 7) {
                 counter++;
             }

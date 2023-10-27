@@ -1,5 +1,8 @@
 package homework.day8.collectionTask;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
@@ -7,16 +10,22 @@ public class TaskTwo {
 
     public static void main(String[] args) {
 
-        List<String> figures = Arrays.asList("Овал", "Круг", "Квадрат", "Эллипс");
+        List<String> figures = Arrays.asList("Овал", "Прямоугольник", "Круг", "Квадрат", "Эллипс");
 
-        //Проитерировать список через for-each и отпечатать слова в файл figures через тире
-        for (String figure : figures) {
-            System.out.print(figure);
-            if (figures.indexOf(figure) < figures.size() - 1) {
-                System.out.print(" - ");
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter("out/figures.txt"));
+            //Проитерировать список через for-each и отпечатать слова в файл figures через тире
+            for (String figure : figures) {
+                writer.write(figure);
+                if (figures.indexOf(figure) < figures.size() - 1) {
+                    writer.write(" - ");
+                }
             }
+            writer.close();
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
-        System.out.println();
 
         //Посчитать сколько фигур НЕ содержат букву "и" и вывести число в консоль
         int counter = figures.size();
