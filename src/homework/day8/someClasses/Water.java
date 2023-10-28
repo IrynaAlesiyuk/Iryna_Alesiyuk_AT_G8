@@ -4,20 +4,20 @@ import java.util.Objects;
 
 public class Water {
 
-    private int weight;
+    private String smell;
     private String color;
 
-    public Water(int weight, String color) {
-        this.weight = weight;
+    public Water(String smell, String color) {
+        this.smell = smell;
         this.color = color;
     }
 
-    public int getWeight() {
-        return weight;
+    public String getSmell() {
+        return smell;
     }
 
-    public void setWeight(int weight) {
-        this.weight = weight;
+    public void setSmell(String smell) {
+        this.smell = smell;
     }
 
     public String getColor() {
@@ -33,18 +33,18 @@ public class Water {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Water water = (Water) o;
-        return weight == water.weight && Objects.equals(color, water.color);
+        return smell == water.smell && Objects.equals(color, water.color);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(weight, color);
+        return Objects.hash(smell, color);
     }
 
     @Override
     public String toString() {
         return "Water{" +
-                "weight=" + weight +
+                "smell=" + smell +
                 ", name='" + color + '\'' +
                 '}';
     }
