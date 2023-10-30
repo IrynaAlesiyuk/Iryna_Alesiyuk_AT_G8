@@ -35,7 +35,7 @@ public class TaskEleven {
 
         //Проитерировать список по индексу и отпечатать пузыри (.toString()) в консоль с новой строки
         for (int i = 0; i < bubbles.size(); i++) {
-            System.out.println(bubbles);
+            System.out.println(bubbles.get(i).toString());
         }
 
     }

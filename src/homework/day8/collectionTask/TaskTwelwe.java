@@ -32,7 +32,7 @@ public class TaskTwelwe {
 
         //Проитерировать список по индексу и отпечатать людей (.toString()) в консоль с новой строки
         for (int i = 0; i < people.size(); i++) {
-            System.out.println(people);
+            System.out.println(people.get(i).toString());
         }
     }
 }
