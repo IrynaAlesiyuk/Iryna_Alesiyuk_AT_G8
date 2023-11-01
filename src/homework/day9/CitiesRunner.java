@@ -14,8 +14,9 @@ public class CitiesRunner {
         cities.add("Берлин");
 
         //Посчитать сумму всех буков во всех словах и вывести число в консоль
-        cities.stream()
-                .map(String::length)
-                .forEach(System.out::println);
+        int count = cities.stream()
+                .mapToInt(String::length)
+                .sum();
+        System.out.println(count);
     }
 }
