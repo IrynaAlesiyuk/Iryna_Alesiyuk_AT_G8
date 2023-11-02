@@ -3,7 +3,7 @@ package homework.day9;
 import java.util.List;
 import java.util.stream.Stream;
 
-public class CountriesTask {
+public class CountriesRunner {
 
     public static void main(String[] args) {
         //Создать поток данных стрингов countries из 4 стран (Андора, Португалия, Англия, Замбия) (через Stream.of())
