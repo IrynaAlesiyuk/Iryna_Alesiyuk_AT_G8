@@ -9,7 +9,7 @@ public class ElementsRunner7 {
         Stream<String> countries = Stream.of("Text field", "Radio", "Check-box", "Drop-down", "Picker", "Breadcrumb");
 
         //Если слово нечетное, то заменить в нем все буквы "e" на букву "o", а если четное,
-        // то заменить слово на число количества буков в этом слове
+        // то заменить слово на число количества буков в этом слове - - многострочная лямбда
        // List<String> changed = countries
         //        .map((word, index) -> index % 2 = 1 ? word.replace("e", "o"):word.length()).toList();
 
