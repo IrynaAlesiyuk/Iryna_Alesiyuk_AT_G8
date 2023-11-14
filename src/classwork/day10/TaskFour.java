@@ -8,6 +8,5 @@ public class TaskFour {
         List<String> list = Arrays.asList("мама", "мыла", "раму", "мама", "чисто");
 
         list.stream().sorted().toList().forEach(System.out::println);
-        list.stream().sorted().toList().forEach(System.out::println);
     }
 }
